@@ -9,7 +9,7 @@ include_once("template/header.php");
       <h1>The Dev Diary</h1>
       <p>Blog sobre programação</p>
     </div>
-    <div>
+    <div id="posts-container">
       <?php foreach ($posts as $post) : ?>
         <div class="post-box">
           <img src="<?= $BASE_URL ?>/img/<?= $post['img'] ?>" alt="<?= $post['title'] ?>">
@@ -17,7 +17,7 @@ include_once("template/header.php");
           <p class="post-description"><?= $post['description'] ?> </p>
           <div class="tags-container"></div>
           <?php foreach ($post['tags'] as $tag) : ?>
-            <a href="#"><?= $tag?> </a>
+            <a href="#"><?= $tag ?> </a>
           <?php endforeach ?>
         </div>
       <?php endforeach ?>

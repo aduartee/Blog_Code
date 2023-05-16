@@ -57,7 +57,7 @@ main {
     left: 150vh;
 }
 
-footer{
+footer {
     width: 100%;
     position: absolute;
     bottom: 0;
@@ -70,7 +70,80 @@ footer{
 #title-container {
     min-width: 500px;
     text-align: center;
-    margin-top:30px;
+    margin-top: 30px;
+    transition: 1s;
+}
+
+#title-container h1 {
+    margin-top: 10px;
+    color: #444444;
+    text-transform: uppercase;
+    transition: 1s;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#title-container h1:hover {
+    color: #999;
+    transform: scale(1.5);
+    cursor: pointer;
+    text-shadow: 1px 6px 2px rgba(0, 0, 0, 0.1);
+}
+
+#title-container:hover {
+    cursor: pointer;
+    color: #999;
+}
+
+.post-box:first-child {
+    min-width: 100%;
+}
+
+#posts-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.post-box {
+    flex: 1 1 0;
+    margin: 0 1%;
+    margin-bottom: 20px;
+
+}
+
+.post-box img {
+    max-width: 100%;
+}
+
+.post-box .post-title {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.post-box .post-title {
+    color: #000;
+    transition: 5s;
+}
+
+.post-box .post-title:hover {
+    color: #999;
+}
+
+.post-box .post-description {
+    color: #666;
+}
+
+.tags-container {
+    margin-top: 10px;
+}
+
+.tags-container a {
+    font-size: 14px;
+    display: inline-block;
+    margin-right: 5px;
 }
 
 body {
@@ -113,15 +186,15 @@ button {
     display: inline-block;
     width: 60px;
     height: 34px;
-  }
-  
-  .switch input {
+}
+
+.switch input {
     opacity: 0;
     width: 0;
     height: 0;
-  }
-  
-  .slider {
+}
+
+.slider {
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -132,9 +205,9 @@ button {
     -webkit-transition: .4s;
     transition: .4s;
     border-radius: 34px;
-  }
-  
-  .slider:before {
+}
+
+.slider:before {
     position: absolute;
     content: "";
     height: 26px;
@@ -145,23 +218,23 @@ button {
     -webkit-transition: .4s;
     transition: .4s;
     border-radius: 50%;
-  }
-  
-  input:checked + .slider {
+}
+
+input:checked+.slider {
     background-color: #2196F3;
-  }
-  
-  input:focus + .slider {
+}
+
+input:focus+.slider {
     box-shadow: 0 0 1px #2196F3;
-  }
-  
-  input:checked + .slider:before {
+}
+
+input:checked+.slider:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
     transform: translateX(26px);
-  }
-  
-  .dark-theme {
+}
+
+.dark-theme {
     background-color: #1c1c1c;
     color: #fff;
     transition: all 0.5s ease-in-out;
@@ -173,10 +246,7 @@ html[data-theme="dark"] {
     transition: all 0.5s ease-in-out;
 }
 
-  [data-theme="dark"] body {
+[data-theme="dark"] body {
     background-color: #1c1c1c;
     color: #fff;
-  }
-
-
-  
+}
