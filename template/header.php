@@ -1,13 +1,13 @@
 <?php
 require_once("helpers/url.php");
 require_once("data/posts.php");
-require_once("data/posts.php");
+require_once("data/categories.php");
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
-    <title>Blog Code</title>
+    <title>The Dev Diary</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,7 +18,7 @@ require_once("data/posts.php");
 <body>
     <header>
         <a id="logo">
-            <img src="<?= $BASE_URL ?>/img/logo.svg" alt="Blog Code">
+            <img src="<?= $BASE_URL ?>/img/logo.svg" alt="The Dev Diary">
             <label class="switch tema" for="toggle-theme">
                 <input type="checkbox" id="toggle-theme">
                 <span class="slider"></span>
