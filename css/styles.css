@@ -205,10 +205,11 @@ footer {
     font-weight: 300;
 }
 
-.tags-list{
+.tags-list {
     color: #202020;
     text-transform: uppercase;
 }
+
 .tags-list,
 #categories-list {
     list-style: none;
@@ -240,6 +241,53 @@ body {
 .dark-theme {
     background-color: #1c1c1c;
     color: #fff;
+}
+
+/* RESPONSIVIDADE */
+
+@media(max-width: 480px) {
+
+    header {
+        width: 100%;
+    }
+
+    #logo {
+        display: block;
+        position: relative;
+        margin: 0 auto;
+        left: 0;
+        width: 50px;
+    }
+
+    #navbar {
+        display: none;
+    }
+
+    #title-container {
+        min-width: 100%;
+        margin-top: 20px;
+    }
+
+    #posts-container {
+        margin-top: 20px;
+    }
+
+    .post-box {
+        flex: 100% 1 0%;
+        padding: 15px;
+        margin: 0;
+    }
+
+    #post-container {
+        grid-template-columns: 100%;
+        padding: 15px;
+        grid-template-areas: "main"
+            "sidebar";
+    }
+
+    .img-container img {
+        width: 100%;
+    }
 }
 
 button {
